@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+:root{
+    --font1:'Caveat', cursive;
+    --font2: 'Anton', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    background-color: darkgray;
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header> h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--font2);
+    font-size: 3.5em;
+}
+header>p{
+    padding-bottom: 50px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: blue;
+}
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 40px;
+    font-family: var(--font1);
+    font-size: 1.8em;
+    }
+section > p {
+    padding-bottom: 2em;
+    }
+section.normal{
+    background-color:white;
+    color: black;
+}
+section.imagem{
+    background-color: rgb(65, 64, 64);
+    color: white;
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.658);
+    background-size: cover;
+    background-attachment: fixed;
+}
+section#imagem02 > p{
+    display: inline-block;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.568);
+    text-shadow: none 5px 5px 5px white;
+}
+section#imagem01{
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+}
+section#imagem02{
+    background-image: url(imagens/background002.jpg);
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
